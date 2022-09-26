@@ -45,7 +45,8 @@ void SearchUserElem (int [,] arr)
     int x = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Введите номер столбца:");
     int y = Convert.ToInt32(Console.ReadLine());
-    if (x < arr.GetLength(0) && y < arr.GetLength(1)) 
+    if (x > 0 && x < arr.GetLength(0) 
+        && y < arr.GetLength(1) && y > 0) 
     {
         Console.WriteLine($"Это {arr[x,y]}");
     }
